@@ -7,14 +7,10 @@ import logo from "@/assets/images/logo-2.svg";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 
-import todoImage from "@/assets/images/icon-todo.svg";
-import calendarImage from "@/assets/images/icon-calendar.svg";
-import remindersImage from "@/assets/images/icon-reminders.svg";
-import planningImage from "@/assets/images/icon-planning.svg";
-
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import QuoteButton from "./QuoteButton";
 
 type NavItem = {
   label: string;
@@ -25,26 +21,26 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    label: "Features",
+    label: "Windows",
     link: "#",
     children: [
-      { label: "Todo list", link: "#", iconImage: todoImage },
-      { label: "Calendar", link: "#", iconImage: calendarImage },
-      { label: "Reminders", link: "#", iconImage: remindersImage },
-      { label: "Planning", link: "#", iconImage: planningImage },
+      { label: "Vertical Sliding Window", link: "#" },
+      { label: "Thermal Insulation", link: "#" },
+      { label: "Tilt and Turn Windows", link: "#" },
+      { label: "Noise Reduction", link: "#" },
     ],
   },
   {
-    label: "Company",
+    label: "Door",
     link: "#",
     children: [
-      { label: "History", link: "#" },
-      { label: "Our Team", link: "#" },
-      { label: "Blog", link: "#" },
+      { label: "Front Doors", link: "#" },
+      { label: "Bi Folding Doors", link: "#" },
+      { label: "Patio Doors", link: "#" },
     ],
   },
-  { label: "Careers", link: "#" },
-  { label: "About", link: "#" },
+  { label: "Roofline", link: "#" },
+  { label: "Contact", link: "#" },
 ];
 
 export default function Navbar() {
@@ -60,8 +56,8 @@ export default function Navbar() {
   }
 
   return (
-    <header className="bg-black">
-      <div className="mx-auto flex w-full max-w-[1660px] justify-between items-center px-4 py-5 text-sm ">
+    <header className="bg-black fixed top-0 left-0 w-full z-50 min-h-24">
+      <div className="mx-auto flex w-full max-w-screen-xl justify-between items-center px-4 py-5 text-sm ">
         {/* logo */}
         <Image src={logo} alt="logo" width={200} />
 
@@ -72,7 +68,7 @@ export default function Navbar() {
             {navItems.map((d, i) => (
               <div key={i} className="relative group px-2 py-3 transition-all">
                 <Link href={d.link ?? "#"}>
-                  <div className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black">
+                  <div className="flex cursor-pointer items-center gap-2 text-white group-hover:text-orange">
                     <span>{d.label}</span>
                     {d.children && (
                       <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
@@ -82,13 +78,10 @@ export default function Navbar() {
 
                 {/* dropdown */}
                 {d.children && (
-                  <div className="absolute z-50 right-0 top-10 hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex">
+                  <div className="absolute z-50 right-0 top-10 hidden w-auto flex-col gap-1 rounded-lg bg-black py-3 shadow-md transition-all group-hover:flex">
                     {d.children.map((ch, i) => (
                       <Link key={i} href={ch.link ?? "#"}>
-                        <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-neutral-400 hover:text-black">
-                          {ch.iconImage && (
-                            <Image src={ch.iconImage} alt="item-icon" />
-                          )}
+                        <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:text-orange">
                           <span className="whitespace-nowrap pl-3">
                             {ch.label}
                           </span>
@@ -103,12 +96,9 @@ export default function Navbar() {
         </section>
 
         {/* header buttons */}
-        <section className="hidden md:flex items-center gap-8">
-          <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
-            Login
-          </button>
-          <button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
-            Register
+        <section className="hidden md:block">
+          <button className="h-fit text-white transition-all hover:text-orange">
+            <QuoteButton />
           </button>
         </section>
 
@@ -133,12 +123,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </section>
         <div className="flex flex-col text-base gap-2 transition-all">
           {navItems.map((d, i) => (
-            <SingleNavItem
-              key={i}
-              label={d.label}
-              iconImage={d.iconImage}
-              link={d.link}
-            >
+            <SingleNavItem key={i} label={d.label} link={d.link}>
               {d.children}
             </SingleNavItem>
           ))}
@@ -147,9 +132,6 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         <section className="flex flex-col gap-8 mt-4 items-center">
           <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
             Login
-          </button>
-          <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
-            Register
           </button>
         </section>
       </div>
@@ -183,10 +165,10 @@ function SingleNavItem({ label, link, children, iconImage }: NavItem) {
 
       {/* dropdown */}
       {isItemOpen && children && (
-        <div className="w-auto flex-col gap-1 rounded-lg bg-white py-3 transition-all flex">
+        <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
           {children.map((ch, i) => (
             <Link key={i} href={ch.link ?? "#"}>
-              <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-neutral-400 hover:text-black">
+              <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:orange">
                 {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
                 <span className="whitespace-nowrap pl-3">{ch.label}</span>
               </div>
