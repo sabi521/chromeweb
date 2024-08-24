@@ -12,9 +12,9 @@ const Hero = () => {
           </h1>
 
           <p className="mt-4 max-w-3xl text-orange font-medium drop-shadow-2xl sm:text-xl/relaxed">
-            Enhance your home's beauty and efficiency with our premium double
-            glazing solutions. Professional installation, lasting quality, and
-            unmatched service. Discover the difference today.
+            Enhance your home&apos;s beauty and efficiency with our premium
+            double glazing solutions. Professional installation, lasting
+            quality, and unmatched service. Discover the difference today.
           </p>
 
           <div className="mt-8 text-center">
