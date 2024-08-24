@@ -20,10 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar /><NavBar />
+        <NavBar />
         <main className="relative overflow-hidden">{children}</main>
-        
-        </body>
+      </body>
     </html>
   );
 }
