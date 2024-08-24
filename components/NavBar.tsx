@@ -58,8 +58,10 @@ export default function Navbar() {
   return (
     <header className="bg-black fixed top-0 left-0 w-full z-50 min-h-24">
       <div className="mx-auto flex w-full max-w-screen-xl justify-between items-center px-4 py-5 text-sm ">
+        {/* logo */}
         <Image src={logo} alt="logo" width={200} />
 
+        {/*Vavigation */}
         <section ref={animationParent} className="flex items-center gap-10">
           {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
           <div className="hidden md:flex items-center gap-4 transition-all">
@@ -74,6 +76,7 @@ export default function Navbar() {
                   </div>
                 </Link>
 
+                {/* dropdown */}
                 {d.children && (
                   <div className="absolute z-50 right-0 top-10 hidden w-auto flex-col gap-1 rounded-lg bg-black py-3 shadow-md transition-all group-hover:flex">
                     {d.children.map((ch, i) => (
@@ -92,6 +95,7 @@ export default function Navbar() {
           </div>
         </section>
 
+        {/* header buttons */}
         <section className="hidden md:block">
           <button className="h-fit text-white transition-all hover:text-orange">
             <QuoteButton />
@@ -125,7 +129,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           ))}
         </div>
 
-        <section className="mt-4 items-center">
+        <section className="mt-6 items-center">
           <button className="h-fit text-white transition-all hover:text-orange">
             <QuoteButton />
           </button>
@@ -159,6 +163,7 @@ function SingleNavItem({ label, link, children, iconImage }: NavItem) {
         )}
       </div>
 
+      {/* dropdown */}
       {isItemOpen && children && (
         <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
           {children.map((ch, i) => (
