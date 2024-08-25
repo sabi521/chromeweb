@@ -5,7 +5,7 @@ const QuoteButton = () => {
     <div>
       <a
         className="group flex items-center justify-between gap-4 rounded-lg border border-orange bg-orange px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring-ornage"
-        href="#"
+        href="/contact"
       >
         <span className="font-medium text-black transition-colors group-hover:text-orange group-active:text-orange">
           Get A Free Quote
@@ -20,9 +20,9 @@ const QuoteButton = () => {
             stroke="black"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M17 8l4 4m0 0l-4 4m4-4H3"
             />
           </svg>

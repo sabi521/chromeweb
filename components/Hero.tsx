@@ -21,10 +21,10 @@ const Hero = () => {
 
           <div className="mt-8 text-center">
             <a
-              href="#"
-              className="block w-full max-w-60 rounded bg-orange px-12 py-3 text-lg font-bold text-black shadow hover:bg-opacity-80 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              href="/contact/"
+              className="block w-full max-w-60 rounded bg-orange px-12 py-3 text-lg font-bold text-black shadow hover:bg-opacity-80 focus:outline-none sm:w-auto"
             >
-              Contact Us
+              Learn More
             </a>
           </div>
         </div>
