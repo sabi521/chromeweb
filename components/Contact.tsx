@@ -169,7 +169,7 @@ const Contact: React.FC = () => {
                 <textarea
                   className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Message"
-                  rows="8"
+                  rows={8}
                   id="message"
                   name="message"
                 ></textarea>
