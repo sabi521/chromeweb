@@ -58,15 +58,18 @@ export default function Navbar() {
 
   return (
     <header className=" bg-black fixed top-0 left-0 w-full z-50 ">
-      <div className="top_header border-b border-gray-300 px-4 h-12 mx-auto flex w-full max-w-screen-xl items-center justify-between text-medium text-orange">
-        <div className="flex gap-2 items-center">
+      <div className="top_header border-b border-gray-300 px-4 py-4 mx-auto text-center flex gap-3 flex-wrap w-full max-w-screen-xl items-center justify-between text-medium text-orange sm:gap-6">
+        <div className="max-w-sm flex gap-2 items-center order-1">
           <IoCall className="text-xl" />
           <a href="tel:7508443393">7508443393</a>
         </div>{" "}
-        <a href="mailto:info@chromedoubleglazing.com">
+        <a
+          className="max-w-[300px] mx-auto sm:w-full order-3 sm:order-2"
+          href="mailto:info@chromedoubleglazing.com"
+        >
           info@chromedoubleglazing.com
         </a>
-        <ul className="flex items-center justify-between gap-6">
+        <ul className="order-2 sm-order-3 flex items-center justify-between gap-6">
           <li>
             <a
               href="#"
