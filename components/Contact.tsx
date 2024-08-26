@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
               <h4 className="text-3xl font-bold">Call Us:</h4>
               <div className="mt-4 max-w-52 flex gap-2 items-center justify-center py-2 rounded-lg text-2xl font-medium text-white bg-black/90">
                 <IoCall className="text-2xl" />
-                <a href="tel:7508443393">7508443393</a>
+                <a href="tel:07508443393">07508443393</a>
               </div>
             </div>
           </div>

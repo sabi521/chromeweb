@@ -61,7 +61,7 @@ export default function Navbar() {
       <div className="top_header border-b border-gray-300 px-4 py-4 mx-auto text-center flex gap-3 flex-wrap w-full max-w-screen-xl items-center justify-between text-medium text-orange sm:gap-6">
         <div className="max-w-sm flex gap-2 items-center order-1">
           <IoCall className="text-xl" />
-          <a href="tel:7508443393">7508443393</a>
+          <a href="tel:07508443393">07508443393</a>
         </div>{" "}
         <a
           className="max-w-[300px] mx-auto sm:w-full order-3 sm:order-2"
