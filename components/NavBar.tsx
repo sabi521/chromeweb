@@ -26,23 +26,21 @@ const navItems: NavItem[] = [
     label: "Windows",
     link: "#",
     children: [
-      { label: "Vertical Sliding Window", link: "#" },
-      { label: "Thermal Insulation", link: "#" },
-      { label: "Tilt and Turn Windows", link: "#" },
-      { label: "Noise Reduction", link: "#" },
+      { label: "uPVC Window", link: "#" },
+      { label: "Casement Window", link: "#" },
+      { label: "Sash Window", link: "#" },
+      { label: "Tilt & Turn Window", link: "#" },
+      { label: "Bay Window", link: "#" },
+      { label: "French Window", link: "#" },
+      { label: "Flush Casement Window", link: "#" },
+      { label: "Triple-Glazed window", link: "#" },
     ],
   },
-  {
-    label: "Door",
-    link: "#",
-    children: [
-      { label: "Front Doors", link: "#" },
-      { label: "Bi Folding Doors", link: "#" },
-      { label: "Patio Doors", link: "#" },
-    ],
-  },
+  { label: "Doors", link: "#" },
+  { label: "Conservatories", link: "#" },
   { label: "Roofline", link: "#" },
-  { label: "Contact", link: "#contact" },
+  { label: "Cladding", link: "#" },
+  { label: "Guttering", link: "#" }
 ];
 
 export default function Navbar() {
@@ -83,7 +81,7 @@ export default function Navbar() {
                 className="size-6 text-orange-500"
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 height="1em"
                 width="1em"
@@ -145,14 +143,14 @@ export default function Navbar() {
       <div className="bg-black min-h-24 flex items-center">
         <div className="mx-auto flex w-full max-w-screen-xl justify-between items-center px-4 text-sm ">
           {/* logo */}
-          <a href="/">
+          <a href="/" className="w-52">
             <Image src={logo} alt="logo" width={200} />
           </a>
 
-          {/*Vavigation */}
+          {/*Navigation */}
           <section ref={animationParent} className="flex items-center gap-10">
             {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
-            <div className="hidden md:flex items-center gap-4 transition-all">
+            <div className="hidden lg:flex items-center gap-4 transition-all">
               {navItems.map((d, i) => (
                 <div
                   key={i}
@@ -187,7 +185,7 @@ export default function Navbar() {
           </section>
 
           {/* header buttons */}
-          <section className="hidden md:block">
+          <section className="hidden lg:block">
             <button className="h-fit text-white transition-all hover:text-orange">
               <QuoteButton />
             </button>
@@ -195,7 +193,7 @@ export default function Navbar() {
 
           <FiMenu
             onClick={openSideMenu}
-            className="cursor-pointer text-4xl text-white md:hidden"
+            className="cursor-pointer text-4xl text-white lg:hidden"
           />
         </div>
       </div>
@@ -205,7 +203,7 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
-    <div className="fixed z-50 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
+    <div className="fixed z-50 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 lg:hidden">
       <div className="h-full w-[65%] bg-black px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
