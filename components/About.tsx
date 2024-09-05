@@ -1,8 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
+import aboutUs from '@/assets/images/about-us.webp'
 
 const About = () => {
   return (
-    <section className="pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16">
+    <section className="pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:py-16">
     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 md:grid-cols-2">
 
@@ -20,7 +22,7 @@ const About = () => {
             </div>
 
             <div className="relative">
-                <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" />
+                <Image className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={aboutUs} alt="fixing the door lock" width={600} height={600} />
             </div>
 
         </div>
