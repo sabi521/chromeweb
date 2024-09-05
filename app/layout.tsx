@@ -7,9 +7,12 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chrome Double Glazing | Expert Door & Window Solutions in London",
+  title: {
+    template: '%s | Expert Door & Window Solutions in London',
+    default: 'Chrome Double Glazing | Expert Door & Window Solutions in London',
+  },
   description:
-    "Chrome Double Glazing offers professional installation and repair services for doors, windows, double glazing, roof lanterns, sash windows, aluminium windows, composite doors, bi-fold doors, conservatories, shopfronts, and lock repairs. Serving London, Ilford, Dagenham, we provide quality craftsmanship and exceptional service",
+    "Chrome Double Glazing offers professional installation and repair services for doors, windows, double glazing, roof lanterns, sash windows, aluminium windows, composite doors, bi-fold doors, conservatories, shopfronts, and lock repairs. Serving London, Ilford, Dagenham, we provide quality craftsmanship and exceptional service"
 };
 
 export default function RootLayout({
