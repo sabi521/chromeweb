@@ -3,12 +3,12 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Contact"
-}
+  title: "Contact",
+};
 
 const page = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-32">
       <Contact />
     </div>
   );
