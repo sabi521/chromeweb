@@ -26,21 +26,21 @@ const navItems: NavItem[] = [
     label: "Windows",
     link: "#",
     children: [
-      { label: "uPVC Windows", link: "#" },
+      { label: "uPVC Windows", link: "upvc-windows" },
       { label: "Casement Windows", link: "casement-windows" },
-      { label: "Sash Windows", link: "#" },
-      { label: "Tilt & Turn Windows", link: "#" },
-      { label: "Bay Windows", link: "#" },
-      { label: "French Windows", link: "#" },
-      { label: "Flush Casement Windows", link: "#" },
-      { label: "Triple-Glazed windows", link: "#" },
+      { label: "Sash Windows", link: "sash-windows" },
+      { label: "Tilt & Turn Windows", link: "tilt-turn-windows" },
+      { label: "Bay Windows", link: "bay-windows" },
+      { label: "French Windows", link: "french-windows" },
+      { label: "Flush Casement Windows", link: "flush-casement-windows" },
+      { label: "Triple-Glazed windows", link: "triple-glazed-windows" },
     ],
   },
   { label: "Doors", link: "#" },
   { label: "Conservatories", link: "#" },
   { label: "Roofline", link: "#" },
   { label: "Cladding", link: "#" },
-  { label: "Guttering", link: "#" }
+  { label: "Guttering", link: "#" },
 ];
 
 export default function Navbar() {
