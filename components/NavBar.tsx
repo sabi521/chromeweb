@@ -27,7 +27,7 @@ const navItems: NavItem[] = [
     link: "#",
     children: [
       { label: "uPVC Windows", link: "#" },
-      { label: "Casement Windows", link: "#" },
+      { label: "Casement Windows", link: "casement-windows" },
       { label: "Sash Windows", link: "#" },
       { label: "Tilt & Turn Windows", link: "#" },
       { label: "Bay Windows", link: "#" },
