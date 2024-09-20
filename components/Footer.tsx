@@ -12,30 +12,29 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  Windows{" "}
+                <a
+                  href="/sash-windows"
+                  className="text-white transition hover:opacity-75"
+                >
+                  Windows
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  Doors{" "}
+                <a
+                  href="/doors"
+                  className="text-white transition hover:opacity-75"
+                >
+                  Doors
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  Double Glazing{" "}
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  All Shopfronts{" "}
+                <a
+                  href="/conservatories"
+                  className="text-white transition hover:opacity-75"
+                >
+                  Conservatories
                 </a>
               </li>
             </ul>
@@ -47,14 +46,7 @@ const Footer = () => {
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  About{" "}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white transition hover:opacity-75">
-                  {" "}
-                  Products{" "}
+                  About
                 </a>
               </li>
             </ul>

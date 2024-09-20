@@ -13,8 +13,10 @@ const page = () => {
           backgroundImage: `url(${myBgImage.src})`,
         }}
       >
-        <div className="banner_content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white p-6">
-          <h1 className="md:text-[48px] md:leading-10">Casement Windows</h1>
+        <div className="banner_content max-w-80 w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white py-3 px-2 md:p-6 md:max-w-2xl">
+          <h1 className="text-3xl md:text-[48px] md:leading-10">
+            Casement Windows
+          </h1>
           <p className="my-3">
             Easy to open and close, offering excellent ventilation
           </p>
@@ -25,7 +27,7 @@ const page = () => {
       </section>
 
       <section className="main-content max-w-3xl mx-auto px-2 mt-8">
-        <h2 className="md:text-[32px] font-bold mb-5">
+        <h2 className="text-xl md:text-[32px] font-bold mb-5">
           Transform Your Home with Casement Windows
         </h2>
         <div className="space-y-4">
