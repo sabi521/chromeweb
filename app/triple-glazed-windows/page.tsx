@@ -89,10 +89,10 @@ const Page = () => {
           </h2>
           <p>
             At Chrome Double Glazing, we pride ourselves on delivering
-            top-quality triple glazed windows that enhance your home’s
+            top-quality triple glazed windows that enhance your home&apos;s
             performance and aesthetics. Our experienced team ensures a perfect
             installation, using the latest materials and technology to maximize
-            your windows' energy efficiency and durability.
+            your windows&apos; energy efficiency and durability.
           </p>
 
           <h4 className="text-xl font-bold">

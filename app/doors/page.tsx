@@ -17,7 +17,9 @@ const Page = () => {
           <h1 className="text-3xl md:text-[48px] md:leading-10">
             Stylish Doors
           </h1>
-          <p className="my-3">Enhance Your Home’s Security and Aesthetics</p>
+          <p className="my-3">
+            Enhance Your Home&apos;s Security and Aesthetics
+          </p>
           <div className="max-w-[200px] w-full mx-auto">
             <GetInTouch />
           </div>

@@ -236,9 +236,8 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 function SingleNavItem({
   label,
   link,
-  children,
   closeSideMenu,
-  iconImage,
+  children,
 }: NavItem & { closeSideMenu: () => void }) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);

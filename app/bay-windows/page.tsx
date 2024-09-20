@@ -15,7 +15,7 @@ const page = () => {
       >
         <div className="banner_content max-w-80 w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white py-3 px-2 md:p-6 md:max-w-2xl">
           <h1 className="text-3xl md:text-[48px] md:leading-10">Bay Windows</h1>
-          <p className="my-3">Enhance Your Home’s Character and Space</p>
+          <p className="my-3">Enhance Your Home&apos;s Character and Space</p>
           <div className="max-w-[200px] w-full mx-auto">
             <GetInTouch />
           </div>
