@@ -36,11 +36,11 @@ const navItems: NavItem[] = [
       { label: "Triple-Glazed windows", link: "triple-glazed-windows" },
     ],
   },
-  { label: "Doors", link: "#" },
-  { label: "Conservatories", link: "#" },
-  { label: "Roofline", link: "#" },
-  { label: "Cladding", link: "#" },
-  { label: "Guttering", link: "#" },
+  { label: "Doors", link: "doors" },
+  { label: "Conservatories", link: "conservatories" },
+  { label: "Roofline", link: "roofline" },
+  { label: "Cladding", link: "cladding" },
+  { label: "Guttering", link: "guttering" },
 ];
 
 export default function Navbar() {
