@@ -36,11 +36,11 @@ const navItems: NavItem[] = [
       { label: "Triple-Glazed windows", link: "triple-glazed-windows" },
     ],
   },
-  { label: "Doors", link: "doors" },
-  { label: "Conservatories", link: "conservatories" },
-  { label: "Roofline", link: "roofline" },
-  { label: "Cladding", link: "cladding" },
-  { label: "Guttering", link: "guttering" },
+  { label: "Doors", link: "#" },
+  { label: "Conservatories", link: "#" },
+  { label: "Roofline", link: "#" },
+  { label: "Cladding", link: "#" },
+  { label: "Guttering", link: "#" },
 ];
 
 export default function Navbar() {
@@ -213,13 +213,9 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </section>
         <div className="flex flex-col text-base gap-2 transition-all">
           {navItems.map((d, i) => (
-            <SingleNavItem
-              key={i}
-              label={d.label}
-              link={d.link}
-              children={d.children}
-              closeSideMenu={closeSideMenu}
-            />
+            <SingleNavItem key={i} label={d.label} link={d.link}>
+              {d.children}
+            </SingleNavItem>
           ))}
         </div>
 
@@ -233,12 +229,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   );
 }
 
-function SingleNavItem({
-  label,
-  link,
-  closeSideMenu,
-  children,
-}: NavItem & { closeSideMenu: () => void }) {
+function SingleNavItem({ label, link, children, iconImage }: NavItem) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -247,7 +238,7 @@ function SingleNavItem({
   }
 
   return (
-    <div className="relative px-2 py-3 transition-all">
+    <div ref={animationParent} className="relative px-2 py-3 transition-all">
       <div
         onClick={toggleItem}
         className="flex cursor-pointer items-center gap-2 text-white group-hover:text-black"
@@ -262,11 +253,12 @@ function SingleNavItem({
         )}
       </div>
 
+      {/* dropdown */}
       {isItemOpen && children && (
         <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
           {children.map((ch, i) => (
-            <Link key={i} href={ch.link ?? "#"} onClick={closeSideMenu}>
-              <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:text-orange">
+            <Link key={i} href={ch.link ?? "#"}>
+              <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:orange">
                 {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
                 <span className="whitespace-nowrap pl-3">{ch.label}</span>
               </div>
