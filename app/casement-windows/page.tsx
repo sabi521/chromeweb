@@ -69,8 +69,8 @@ const page = () => {
               industry standards.
             </li>
             <li>
-              <strong>Energy Efficiency:</strong> 'A' rated for outstanding heat
-              retention and minimal heat
+              <strong>Energy Efficiency:</strong> &apos;A&apos; rated for
+              outstanding heat retention and minimal heat
             </li>
           </ul>
 
