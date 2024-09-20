@@ -35,7 +35,7 @@ const page = () => {
           <p>
             Transform your home with our exquisite bespoke sash windows. Crafted
             with precision and care, our windows come in a variety of styles,
-            designs, and configurations to suit any aesthetic. Whether you’re
+            designs, and configurations to suit any aesthetic. Whether you are
             looking for a classic, timeless look or a modern twist on a
             traditional design, we have the perfect solution for you.
           </p>

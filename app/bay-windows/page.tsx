@@ -31,7 +31,7 @@ const page = () => {
           <p>
             Bay windows are a classic architectural feature that not only add
             charm and elegance to your home but also create additional space,
-            making any room feel larger and more inviting. They’re perfect for
+            making any room feel larger and more inviting. They are perfect for
             capturing natural light, offering stunning views, and boosting the
             overall aesthetic appeal of your property.
           </p>
@@ -98,7 +98,7 @@ const page = () => {
             </li>
             <li>
               <strong>Box Bay Windows:</strong> This style offers a modern twist
-              with straight lines and sharp angles. It’s more rectangular in
+              with straight lines and sharp angles. It is more rectangular in
               shape and often features a flat front with side panels at
               90-degree angles.
             </li>
@@ -119,8 +119,9 @@ const page = () => {
               high-quality bay windows that combine both style and durability.
               Our expert team ensures a perfect fit, while our use of
               energy-efficient materials helps to keep your home warm and quiet.
-              Whether you're looking for a traditional or contemporary design,
-              we offer a range of options to suit your taste and property style.
+              Whether youh&apos;re looking for a traditional or contemporary
+              design, we offer a range of options to suit your taste and
+              property style.
             </p>
 
             <h4 className="text-xl font-bold">

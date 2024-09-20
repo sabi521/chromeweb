@@ -92,7 +92,7 @@ const Page = () => {
             <li>
               <strong>Custom Flush Casement:</strong> Tailored to your
               specifications, custom flush casement windows offer unique designs
-              to match your home’s character.
+              to match your home&apos;s character.
             </li>
           </ol>
 
@@ -112,8 +112,8 @@ const Page = () => {
               Get a Free Quote for Your Flush Casement Windows
             </h4>
             <p>
-              Elevate your home’s style and efficiency with our flush casement
-              windows. Contact Chrome Double Glazing today for a free,
+              Elevate your home&apos;s style and efficiency with our flush
+              casement windows. Contact Chrome Double Glazing today for a free,
               no-obligation quote and discover the difference our windows can
               make.
             </p>

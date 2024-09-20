@@ -60,7 +60,7 @@ const Page = () => {
               <li>
                 <strong>Enhance Curb Appeal:</strong> Available in various
                 styles and colors, our guttering products can complement your
-                home’s exterior design.
+                home&apos;s exterior design.
               </li>
               <li>
                 <strong>Low Maintenance:</strong> Modern materials used in
@@ -105,9 +105,9 @@ const Page = () => {
             </h4>
             <p>
               At Chrome Double Glazing, we specialize in providing high-quality
-              guttering solutions tailored to your home’s specific needs. Our
-              expert team ensures a seamless installation process, using only
-              the best materials for durability and functionality.
+              guttering solutions tailored to your home&apos;s specific needs.
+              Our expert team ensures a seamless installation process, using
+              only the best materials for durability and functionality.
             </p>
 
             <h4 className="text-xl font-bold">

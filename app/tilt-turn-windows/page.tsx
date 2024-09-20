@@ -117,9 +117,10 @@ const page = () => {
 
           <p>
             At Chrome Double Glazing, we understand that every home is unique.
-            That’s why our Tilt and Turn windows are fully customizable,
+            That is why our Tilt and Turn windows are fully customizable,
             allowing you to choose from a wide range of designs, colors, and
-            finishes to suit your property’s style and personal preferences.
+            finishes to suit your property&apos;s style and personal
+            preferences.
           </p>
 
           <p>

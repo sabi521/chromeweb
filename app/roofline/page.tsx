@@ -32,7 +32,7 @@ const Page = () => {
             Roofline systems are essential for protecting your home from the
             elements while enhancing its overall appearance. At Chrome Double
             Glazing, we provide a range of roofline products, including fascias,
-            soffits, and guttering, designed to improve your home’s
+            soffits, and guttering, designed to improve your homehome&apos;ss
             functionality and aesthetic appeal.
           </p>
 
@@ -104,9 +104,9 @@ const Page = () => {
             </h4>
             <p>
               At Chrome Double Glazing, we specialize in providing high-quality
-              roofline solutions tailored to your home’s specific needs. Our
-              expert team ensures a seamless installation process, using only
-              the best materials for durability and style.
+              roofline solutions tailored to your home&apos;s specific needs.
+              Our expert team ensures a seamless installation process, using
+              only the best materials for durability and style.
             </p>
 
             <h4 className="text-xl font-bold">

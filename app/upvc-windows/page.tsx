@@ -76,7 +76,7 @@ const page = () => {
           <p>
             Our team of expert installers ensures that each window is fitted to
             the highest standards, ensuring energy efficiency and long-term
-            performance. Whether you’re looking to replace old windows or
+            performance. Whether you&apos;re looking to replace old windows or
             upgrade to modern, energy-efficient UPVC windows, Chrome Double
             Glazing is here to help.
           </p>

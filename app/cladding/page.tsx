@@ -16,7 +16,9 @@ const Page = () => {
           <h1 className="text-3xl md:text-[48px] md:leading-10">
             Durable Cladding Solutions
           </h1>
-          <p className="my-3">Enhance Your Home’s Aesthetics and Protection</p>
+          <p className="my-3">
+            Enhance Your Home&apos;s Aesthetics and Protection
+          </p>
           <div className="max-w-[200px] w-full mx-auto">
             <GetInTouch />
           </div>
@@ -61,7 +63,7 @@ const Page = () => {
               </li>
               <li>
                 <strong>Increased Property Value:</strong> High-quality cladding
-                can increase your home’s market value and curb appeal.
+                can increase your home&apos;s market value and curb appeal.
               </li>
             </ol>
           </div>
@@ -106,10 +108,10 @@ const Page = () => {
             </h4>
             <p>
               At Chrome Double Glazing, we are dedicated to providing
-              top-quality cladding solutions tailored to your home’s specific
-              needs. Our expert team ensures a professional installation
-              process, using only the highest quality materials for lasting
-              performance and beauty.
+              top-quality cladding solutions tailored to your home&apos;s
+              specific needs. Our expert team ensures a professional
+              installation process, using only the highest quality materials for
+              lasting performance and beauty.
             </p>
 
             <h4 className="text-xl font-bold">
@@ -118,8 +120,8 @@ const Page = () => {
             <p>
               Ready to elevate your home with stylish and durable cladding?
               Contact Chrome Double Glazing today for a free, no-obligation
-              quote, and let us help you enhance your property’s aesthetics and
-              protection.
+              quote, and let us help you enhance your property&apos;s aesthetics
+              and protection.
             </p>
           </div>
         </div>

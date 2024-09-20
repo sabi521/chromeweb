@@ -58,7 +58,7 @@ const Page = () => {
               <li>
                 <strong>Improved Energy Efficiency:</strong> With
                 energy-efficient designs and materials, our doors help maintain
-                your home's temperature, reducing energy bills.
+                your home&apos;s temperature, reducing energy bills.
               </li>
               <li>
                 <strong>Stylish Designs:</strong> Available in a variety of
@@ -112,9 +112,9 @@ const Page = () => {
             </h4>
             <p>
               At Chrome Double Glazing, we are committed to providing
-              high-quality doors that not only enhance your home’s beauty but
-              also improve its functionality. Our expert team ensures a perfect
-              fit and finish, backed by exceptional customer service.
+              high-quality doors that not only enhance your home&apos;s beauty
+              but also improve its functionality. Our expert team ensures a
+              perfect fit and finish, backed by exceptional customer service.
             </p>
 
             <h4 className="text-xl font-bold">
