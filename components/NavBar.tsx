@@ -247,7 +247,7 @@ function SingleNavItem({
   }
 
   return (
-    <div ref={animationParent} className="relative px-2 py-3 transition-all">
+    <div className="relative px-2 py-3 transition-all">
       <div
         onClick={toggleItem}
         className="flex cursor-pointer items-center gap-2 text-white group-hover:text-black"
@@ -262,7 +262,6 @@ function SingleNavItem({
         )}
       </div>
 
-      {/* dropdown */}
       {isItemOpen && children && (
         <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
           {children.map((ch, i) => (
