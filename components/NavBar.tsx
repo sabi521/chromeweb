@@ -213,7 +213,12 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </section>
         <div className="flex flex-col text-base gap-2 transition-all">
           {navItems.map((d, i) => (
-            <SingleNavItem key={i} label={d.label} link={d.link}>
+            <SingleNavItem
+              key={i}
+              label={d.label}
+              link={d.link}
+              closeSideMenu={closeSideMenu}
+            >
               {d.children}
             </SingleNavItem>
           ))}
@@ -229,7 +234,13 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   );
 }
 
-function SingleNavItem({ label, link, children, iconImage }: NavItem) {
+function SingleNavItem({
+  label,
+  link,
+  children,
+  iconImage,
+  closeSideMenu,
+}: NavItem & { closeSideMenu: () => void }) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -257,7 +268,7 @@ function SingleNavItem({ label, link, children, iconImage }: NavItem) {
       {isItemOpen && children && (
         <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
           {children.map((ch, i) => (
-            <Link key={i} href={ch.link ?? "#"}>
+            <Link key={i} href={ch.link ?? "#"} onClick={closeSideMenu}>
               <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:orange">
                 {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
                 <span className="whitespace-nowrap pl-3">{ch.label}</span>
