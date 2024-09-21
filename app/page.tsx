@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import Portfolio from "@/components/Portfolio";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="">
       <Hero />
       <About />
+      <Portfolio />
       <Contact />
     </main>
   );

@@ -1,12 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import heroImage from "@/assets/images/heroImage.webp"
+import heroImage from "@/assets/images/heroImage.webp";
 
 const Hero = () => {
   return (
     <section className="relative mt-20 z-10">
       <div className="w-screen h-[800px] absolute top-0 left-0">
-        <Image className="w-full h-full object-cover" src={heroImage} width={1000} height={1000} alt="background image"/>
+        <Image
+          className="w-full h-full object-cover"
+          src={heroImage}
+          width={1000}
+          height={1000}
+          alt="background image"
+        />
       </div>
       {/* Adjusted the overlay to add opacity */}
       <div className="absolute w-full h-[800px] inset-0 z-[5] bg-gradient-to-r from-black/75 to-white/40"></div>
