@@ -4,7 +4,10 @@ import aboutUs from "@/assets/images/window_banner.webp";
 
 const About = () => {
   return (
-    <section className="pt-10 overflow-hidden dark:bg-gray-800 2xl:py-16">
+    <section
+      id="about"
+      className="pt-10 overflow-hidden dark:bg-gray-800 2xl:py-16"
+    >
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 gap-10 md:grid-cols-2">
           <div className="w-full">
@@ -12,19 +15,19 @@ const About = () => {
               About Us
             </h2>
             <p className="w-full mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8 md:max-w-lg">
-              At <strong>Chrome Double Glazing</strong>, we don’t just install
-              doors and windows—we enhance your home’s security and style. As
-              expert fitters, we specialize in everything from the installation
-              of elegant <strong>uPVC products</strong> to robust{" "}
+              At <strong>Chrome Double Glazing</strong>, we don&apos;t just
+              install doors and windows—we enhance your home&apos;s security and
+              style. As expert fitters, we specialize in everything from the
+              installation of elegant <strong>uPVC products</strong> to robust{" "}
               <strong>double glazing</strong> solutions that add both value and
               beauty to your property.
             </p>
             <p className="w-full mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300">
-              Whether you’re looking to replace old windows with
+              Whether you&apos;re looking to replace old windows with
               energy-efficient{" "}
               <strong>casement, sash, or tilt-and-turn styles</strong>, or need
               help with <strong>lock repairs</strong>, our team delivers a
-              professional, stress-free experience. We’re also experts in
+              professional, stress-free experience. We&apos;re also experts in
               crafting custom solutions for <strong>roofline products</strong>{" "}
               and even the intricate design of <strong>French windows</strong>.
             </p>
