@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "@/assets/images/logo-2.svg";
-import Image from "next/image";
 
 const Footer = () => {
   return (
