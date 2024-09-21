@@ -254,7 +254,13 @@ function SingleNavItem({
         onClick={toggleItem}
         className="flex cursor-pointer items-center gap-2 text-white group-hover:text-black"
       >
-        <span>{label}</span>
+        {link ? (
+          <Link href={link} onClick={closeSideMenu}>
+            <span>{label}</span>
+          </Link>
+        ) : (
+          <span>{label}</span>
+        )}
         {children && (
           <IoIosArrowDown
             className={`text-xs transition-all ${
