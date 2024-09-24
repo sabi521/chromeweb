@@ -154,23 +154,22 @@ export default function Navbar() {
               {navItems.map((d, i) => (
                 <div
                   key={i}
-                  className="relative group px-2 py-3 transition-all"
+                  className="relative group px-2 py-4 transition-all cursor-pointer"
                 >
                   <Link href={d.link ?? "#"}>
-                    <div className="flex cursor-pointer items-center gap-2 text-white group-hover:text-orange">
+                    <div className="flex items-center gap-2 text-white group-hover:text-orange">
                       <span>{d.label}</span>
                       {d.children && (
                         <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
                       )}
                     </div>
                   </Link>
-
                   {/* dropdown */}
                   {d.children && (
-                    <div className="absolute z-50 right-0 top-10 hidden w-auto flex-col gap-1 rounded-lg bg-black py-3 shadow-md transition-all group-hover:flex">
+                    <div className="absolute z-50 right-0 top-12 hidden w-auto flex-col gap-1 rounded-lg bg-black py-4 shadow-md transition-all group-hover:flex">
                       {d.children.map((ch, i) => (
                         <Link key={i} href={ch.link ?? "#"}>
-                          <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:text-orange">
+                          <div className="flex items-center py-2 px-6 text-white hover:text-orange">
                             <span className="whitespace-nowrap pl-3">
                               {ch.label}
                             </span>
@@ -249,10 +248,10 @@ function SingleNavItem({
   }
 
   return (
-    <div ref={animationParent} className="relative px-2 py-3 transition-all">
+    <div ref={animationParent} className="relative px-6 py-4 transition-all">
       <div
         onClick={toggleItem}
-        className="flex cursor-pointer items-center gap-2 text-white group-hover:text-black"
+        className="flex items-center gap-2 text-white group-hover:text-black cursor-pointer"
       >
         {link ? (
           <Link href={link} onClick={closeSideMenu}>
@@ -272,11 +271,10 @@ function SingleNavItem({
 
       {/* dropdown */}
       {isItemOpen && children && (
-        <div className="w-auto flex-col gap-1 rounded-lg bg-black py-3 transition-all flex">
+        <div className="flex-col gap-1 rounded-lg bg-black py-4 transition-all flex">
           {children.map((ch, i) => (
             <Link key={i} href={ch.link ?? "#"} onClick={closeSideMenu}>
-              <div className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white hover:orange">
-                {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
+              <div className="flex items-center py-2 px-6 text-white hover:text-orange">
                 <span className="whitespace-nowrap pl-3">{ch.label}</span>
               </div>
             </Link>
