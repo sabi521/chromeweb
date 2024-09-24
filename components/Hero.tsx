@@ -12,6 +12,7 @@ const Hero = () => {
           width={1000}
           height={1000}
           alt="background image"
+          priority={true}
         />
       </div>
       {/* Adjusted the overlay to add opacity */}

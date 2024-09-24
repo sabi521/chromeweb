@@ -248,7 +248,7 @@ function SingleNavItem({
   }
 
   return (
-    <div ref={animationParent} className="relative px-6 py-4 transition-all">
+    <div ref={animationParent} className="relative px-6 py-2 transition-all">
       <div
         onClick={toggleItem}
         className="flex items-center gap-2 text-white group-hover:text-black cursor-pointer"
