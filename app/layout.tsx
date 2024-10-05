@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 import { WithContext, LocalBusiness, Service } from "schema-dts";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,6 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-Q4E869XH8W" />
       <body className={inter.className}>
         <NavBar />
         <main className="relative overflow-hidden">{children}</main>
