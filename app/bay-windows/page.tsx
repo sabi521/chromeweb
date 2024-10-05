@@ -32,7 +32,7 @@ const page = () => {
             Bay windows are a classic architectural feature that not only add
             charm and elegance to your home but also create additional space,
             making any room feel larger and more inviting. They are perfect for
-            capturing natural light, offering stunning views, and boosting the
+            capturing natural light, offering stunning views and boosting the
             overall aesthetic appeal of your property.
           </p>
 
