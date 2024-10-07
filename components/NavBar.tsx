@@ -95,7 +95,7 @@ export default function Navbar() {
 
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61565630902899"
               rel="noreferrer"
               target="_blank"
               className="text-orange transition hover:opacity-75"
