@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/window_banner.webp"; // Import for URL re
 import contentImage from "@/assets/images/sash-windows.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sash Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/sash-windows/', 
+  },
+};
 
 const page = () => {
   return (

@@ -2,29 +2,22 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
-import { generateSchema } from "@/lib/schema";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/', 
+    canonical: 'https://www.chromedoubleglazing.com/', 
   },
 };
 
-export default function Home() {
-  const schemaData = generateSchema("LocalBusiness", {}); // Generate schema data
 
+export default function Home() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
       <main>
         <Hero />
         <About />
         <Portfolio />
         <Contact />
       </main>
-    </>
   );
 }

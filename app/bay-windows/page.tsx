@@ -3,7 +3,14 @@ import myBgImage from "@/assets/images/bay_window_1.webp"; // Import for URL ref
 import contentImage from "@/assets/images/bay_window_2.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Bay Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/bay-windows/', 
+  },
+};
 const page = () => {
   return (
     <div className="mt-32 mb-10">

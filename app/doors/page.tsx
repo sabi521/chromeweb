@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/glass_doors.webp"; // Import for URL refe
 import contentImage from "@/assets/images/double_doors.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Doors",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/doors/', 
+  },
+};
 
 const Page = () => {
   return (

@@ -2,6 +2,14 @@ import React from "react";
 import myBgImage from "@/assets/images/roofline.webp"; // Import for URL reference
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Roofline",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/roofline/', 
+  },
+};
 
 const Page = () => {
   return (

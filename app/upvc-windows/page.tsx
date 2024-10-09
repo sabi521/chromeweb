@@ -1,6 +1,14 @@
 import React from "react";
 import myBgImage from "@/assets/images/windows.webp"; // Import for URL reference
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "uPVC Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/upvc-windows/', 
+  },
+};
 
 const page = () => {
   return (

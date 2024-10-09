@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/conservatories_2.webp"; // Import for URL
 import contentImage from "@/assets/images/conservatories.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conservatories",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/conservatories/', 
+  },
+};
 
 const Page = () => {
   return (

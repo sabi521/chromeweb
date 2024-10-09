@@ -1,7 +1,14 @@
 import React from "react";
 import myBgImage from "@/assets/images/windows_installation.webp";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Flush Casement Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/flush-casement-windows/', 
+  },
+};
 const Page = () => {
   return (
     <div className="mt-32 mb-10">

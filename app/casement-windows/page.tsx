@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/casement_windows.webp"; // Import for URL
 import contentImage from "@/assets/images/window_handle.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Casement Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/casement-windows/', 
+  },
+};
 
 const page = () => {
   return (

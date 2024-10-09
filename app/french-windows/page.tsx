@@ -2,6 +2,14 @@ import React from "react";
 import myBgImage from "@/assets/images/window_banner.webp"; // Import for URL reference
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "French Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/french-windows/', 
+  },
+};
 
 const page = () => {
   return (

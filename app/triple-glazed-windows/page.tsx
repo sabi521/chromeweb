@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/triple_glaze_1.webp"; // Import for URL r
 import contentImage from "@/assets/images/triple_glazed_2.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Triple Glazed Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/triple-glazed-windows/', 
+  },
+};
 
 const Page = () => {
   return (

@@ -2,7 +2,14 @@ import React from "react";
 import myBgImage from "@/assets/images/cladding.webp"; // Import for URL reference
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Cladding",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/flush-casement-windows/', 
+  },
+};
 const Page = () => {
   return (
     <div className="mt-32 mb-10">

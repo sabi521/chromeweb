@@ -3,6 +3,14 @@ import myBgImage from "@/assets/images/tilt-turn-windows.webp"; // Import for UR
 import contentImage from "@/assets/images/window_handle.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tilt and Turn Windows",
+  alternates: {
+    canonical: 'https://chromedoubleglazing.com/tilt-turn-windows/', 
+  },
+};
 
 const page = () => {
   return (

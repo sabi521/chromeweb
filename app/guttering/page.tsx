@@ -2,6 +2,14 @@ import React from "react";
 import myBgImage from "@/assets/images/guttering.webp"; // Import for URL reference
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = { 
+  title: "Guttering",
+  alternates: {
+    canonical: 'https://www.chromedoubleglazing.com/guttering/', 
+  },
+};
 
 const Page = () => {
   return (
