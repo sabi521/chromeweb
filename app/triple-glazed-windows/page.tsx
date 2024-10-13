@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Triple Glazed Windows",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/triple-glazed-windows/', 
+    canonical: "https://chromedoubleglazing.com/triple-glazed-windows",
   },
 };
 

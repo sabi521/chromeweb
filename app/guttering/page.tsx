@@ -4,10 +4,10 @@ import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
 import { Metadata } from "next";
 
-export const metadata: Metadata = { 
+export const metadata: Metadata = {
   title: "Guttering",
   alternates: {
-    canonical: 'https://www.chromedoubleglazing.com/guttering/', 
+    canonical: "https://www.chromedoubleglazing.com/guttering",
   },
 };
 

@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cladding",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/flush-casement-windows/', 
+    canonical: "https://chromedoubleglazing.com/flush-casement-windows",
   },
 };
 const Page = () => {

@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "uPVC Windows",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/upvc-windows/', 
+    canonical: "https://chromedoubleglazing.com/upvc-windows",
   },
 };
 

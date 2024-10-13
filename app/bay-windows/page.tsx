@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bay Windows",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/bay-windows/', 
+    canonical: "https://chromedoubleglazing.com/bay-windows",
   },
 };
 const page = () => {

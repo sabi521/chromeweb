@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tilt and Turn Windows",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/tilt-turn-windows/', 
+    canonical: "https://chromedoubleglazing.com/tilt-turn-windows",
   },
 };
 

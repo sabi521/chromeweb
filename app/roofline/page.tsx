@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Roofline",
   alternates: {
-    canonical: 'https://chromedoubleglazing.com/roofline/', 
+    canonical: "https://chromedoubleglazing.com/roofline",
   },
 };
 

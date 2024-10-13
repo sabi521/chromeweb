@@ -5,7 +5,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Contact",
   alternates: {
-    canonical: 'https://www.chromedoubleglazing.com/contact/', 
+    canonical: "https://www.chromedoubleglazing.com/contact",
   },
 };
 
