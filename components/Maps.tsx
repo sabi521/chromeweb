@@ -8,9 +8,9 @@ const Maps = () => {
         width="600"
         height="450"
         className="w-full"
-        allowFullScreen=""
+        allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
   );
