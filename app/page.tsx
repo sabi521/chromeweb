@@ -6,18 +6,17 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://www.chromedoubleglazing.com/', 
+    canonical: "https://www.chromedoubleglazing.com/",
   },
 };
 
-
 export default function Home() {
   return (
-      <main>
-        <Hero />
-        <About />
-        <Portfolio />
-        <Contact />
-      </main>
+    <main>
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
+    </main>
   );
 }

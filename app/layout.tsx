@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "@/components/Footer";
+import Map from "@/components/Maps";
 import Script from "next/script";
 import { WithContext, LocalBusiness, Service } from "schema-dts";
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         <main className="relative overflow-hidden">{children}</main>
+        <Map />
         <Footer />
         <Script
           id="local-business-schema"
