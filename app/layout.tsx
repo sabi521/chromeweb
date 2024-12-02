@@ -9,7 +9,6 @@ import React, { Suspense } from "react";
 import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
 import { WithContext, LocalBusiness, Service } from "schema-dts";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,7 +65,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-Q4E869XH8W" />
       <Suspense fallback={null}>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-6EJX5BZ5T7" />
       </Suspense>
