@@ -63,10 +63,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html lang="en">
       <Suspense fallback={null}>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-6EJX5BZ5T7" />
+        {GA_MEASUREMENT_ID && (
+          <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
+        )}
       </Suspense>
       <body className={inter.className}>
         <NavBar />
