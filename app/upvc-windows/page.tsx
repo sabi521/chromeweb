@@ -46,13 +46,13 @@ const page = () => {
         </h2>
         <div className="space-y-6 text-gray-700">
           <p className="text-lg leading-relaxed">
-            At Chrome Double Glazing, we're dedicated to providing top-tier uPVC
-            window solutions for both residential and commercial properties. Our
-            uPVC windows are crafted from high-quality, unplasticized polyvinyl
-            chloride, a material renowned for its exceptional durability,
-            energy-efficiency, and low maintenance requirements. Opting for uPVC
-            windows is a smart investment in the comfort and value of your
-            property.
+            At Chrome Double Glazing, we&apos;re dedicated to providing top-tier
+            uPVC window solutions for both residential and commercial
+            properties. Our uPVC windows are crafted from high-quality,
+            unplasticized polyvinyl chloride, a material renowned for its
+            exceptional durability, energy-efficiency, and low maintenance
+            requirements. Opting for uPVC windows is a smart investment in the
+            comfort and value of your property.
           </p>
 
           <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
@@ -68,8 +68,8 @@ const page = () => {
             <li className="text-lg leading-relaxed">
               <span className="font-semibold">Exceptional Durability:</span>{" "}
               Resistant to rot, rust, and corrosion, uPVC windows are designed
-              to withstand the UK's challenging weather conditions, ensuring
-              long-lasting performance with minimal upkeep.
+              to withstand the UK&apos;s challenging weather conditions,
+              ensuring long-lasting performance with minimal upkeep.
             </li>
             <li className="text-lg leading-relaxed">
               <span className="font-semibold">Low Maintenance:</span> Say
@@ -100,10 +100,10 @@ const page = () => {
           <p className="text-lg leading-relaxed">
             Our team of skilled installers is committed to delivering flawless
             fittings, guaranteeing optimal energy efficiency and enduring
-            performance. Whether you're embarking on a full property renovation
-            or simply looking to replace outdated windows with modern,
-            energy-efficient uPVC options, Chrome Double Glazing is ready to
-            assist.
+            performance. Whether you&apos;re embarking on a full property
+            renovation or simply looking to replace outdated windows with
+            modern, energy-efficient uPVC options, Chrome Double Glazing is
+            ready to assist.
           </p>
 
           <p className="text-lg leading-relaxed">

@@ -31,7 +31,7 @@ const Page = () => {
               Experience Superior Comfort with Triple Glazed Windows
             </h1>
             <p className="text-lg md:text-xl mb-6">
-              Maximize your home's energy efficiency and comfort with our
+              Maximize your home&apos;s energy efficiency and comfort with our
               advanced triple glazed windows.
             </p>
             <div className="mx-auto w-fit">

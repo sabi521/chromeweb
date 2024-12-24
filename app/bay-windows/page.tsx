@@ -62,7 +62,7 @@ const page = () => {
           </h3>
           <p className="text-lg leading-relaxed">
             A bay window is a window space that projects outward from the main
-            walls of a building, creating a "bay" within the room. Characterized
+            walls of a building, creating a bay within the room. Characterized
             by three or more window panels angled to form a beautiful curve or
             geometric shape, bay windows add a unique architectural interest
             while enhancing the functionality of your space. You can also read

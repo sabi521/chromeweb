@@ -62,9 +62,9 @@ const page = () => {
             Available in a wide array of configurations, colors, and finishes,
             our casement windows are designed to complement any architectural
             style, offering a customized solution that perfectly matches your
-            home's unique character. We offer both uPVC and Aluminium options,
-            as well as a wood finish for traditional properties. You can read
-            more about
+            home&apos;s unique character. We offer both uPVC and Aluminium
+            options, as well as a wood finish for traditional properties. You
+            can read more about
             <a
               href="https://www.chromedoubleglazing.com/double-glazing"
               className="text-blue-600 font-medium hover:underline ml-1"
@@ -110,7 +110,7 @@ const page = () => {
           </div>
 
           <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
-            Why You'll Love Casement Windows
+            Why You&apos;ll Love Casement Windows
           </h3>
 
           <ol className="list-decimal list-inside space-y-3">
