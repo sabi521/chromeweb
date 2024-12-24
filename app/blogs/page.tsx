@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { blogPosts } from "@/app/blog-data"; // Import blog data
+import Image from "next/image"; // Import the Image component
 
 export const metadata: Metadata = {
   title: "Our Blog | Chrome Double Glazing",
@@ -29,10 +30,13 @@ const BlogPage = () => {
             <div key={post.id} className="bg-white rounded-md shadow-md p-6">
               {/* Thumbnail Image */}
               <div className="mb-4">
-                <img
+                <Image
                   src={post.imagePlaceholder}
                   alt={post.title}
                   className="rounded-md w-full object-cover h-40"
+                  width={500} // You may adjust this
+                  height={300} // You may adjust this
+                  priority={true}
                 />
               </div>
               <h2 className="text-xl font-semibold text-gray-800 mb-2">

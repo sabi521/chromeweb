@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { BlogPost, blogPosts } from "@/app/blog-data"; // Ensure this path is correct
+import Image from "next/image"; // Import the Image component
 
 const BlogPostPreview: React.FC = () => {
   // Sort posts by date
@@ -28,12 +29,15 @@ const BlogPostPreview: React.FC = () => {
         {recentPosts.map((post) => (
           <div key={post.id} className="bg-white rounded-md shadow-md p-6">
             <div className="mb-4">
-              <img
-                src={post.imagePlaceholder}
-                alt={post.title}
-                className="rounded-md w-full object-cover h-40"
-              />
-            </div>
+                <Image
+                  src={post.imagePlaceholder}
+                  alt={post.title}
+                  className="rounded-md w-full object-cover h-40"
+                  width={500} // You may adjust this
+                  height={300} // You may adjust this
+                  priority = {true}
+                />
+              </div>
             <h2 className="text-xl font-semibold text-gray-800 mb-2">
               <Link href={`/blogs/${post.slug}`} className=" hover:underline">
                 {post.title}
