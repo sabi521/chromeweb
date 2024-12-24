@@ -26,6 +26,7 @@ const navItems: NavItem[] = [
     label: "Windows",
     link: "#",
     children: [
+      { label: "Double Glazed Windows", link: "double-glazing" },
       { label: "uPVC Windows", link: "upvc-windows" },
       { label: "Casement Windows", link: "casement-windows" },
       { label: "Sash Windows", link: "sash-windows" },
@@ -154,11 +155,11 @@ export default function Navbar() {
               {navItems.map((d, i) => (
                 <div
                   key={i}
-                  className="relative group px-2 py-4 transition-all cursor-pointer"
+                  className="relative group py-4 transition-all cursor-pointer"
                 >
                   <Link href={d.link ?? "#"}>
                     <div className="flex items-center gap-2 text-white group-hover:text-orange">
-                      <span>{d.label}</span>
+                      <span className="block px-3">{d.label}</span>
                       {d.children && (
                         <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
                       )}

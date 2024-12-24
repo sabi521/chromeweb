@@ -1,11 +1,13 @@
 import React from "react";
-import myBgImage from "@/assets/images/window_banner.webp"; // Import for URL reference
-import Image from "next/image";
+import myBgImage from "@/assets/images/window_banner.webp";
 import GetInTouch from "@/components/GetInTouch";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "French Windows",
+  title:
+    "Elegant French Windows: Style, Light & Access | Chrome Double Glazing",
+  description:
+    "Discover the beauty and functionality of our French windows. Enhance your home with classic designs, increased natural light, and seamless indoor-outdoor living. Get a free quote today!",
   alternates: {
     canonical: "https://chromedoubleglazing.com/french-windows",
   },
@@ -14,81 +16,114 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="mt-32 mb-10">
+      {/* Banner Section */}
       <section
-        className="top_banner max-w-[1920px] mx-auto relative h-[600px] w-full bg-black bg-cover bg-no-repeat bg-center"
+        className="relative h-[500px] md:h-[600px] bg-cover bg-center bg-no-repeat bg-black/70"
         style={{
-          backgroundImage: `url(${myBgImage.src})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${myBgImage.src})`,
         }}
       >
-        <div className="banner_content max-w-80 w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white py-3 px-2 md:p-6 md:max-w-2xl">
-          <h1 className="text-3xl md:text-[48px] md:leading-10">
-            French Windows
-          </h1>
-          <p className="my-3">Elegant Design and Functionality</p>
-          <div className="max-w-[200px] w-full mx-auto">
-            <GetInTouch />
+        <div className="absolute inset-0 flex items-center justify-center text-center mx-auto px-4 md:px-6">
+          <div className="max-w-2xl w-full text-white">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+              Enhance Your Home with French Windows
+            </h1>
+            <p className="text-lg md:text-xl mb-6">
+              Combine classic elegance with modern functionality with our
+              stunning French windows.
+            </p>
+            <div className="mx-auto w-fit">
+              <GetInTouch />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="main-content max-w-3xl mx-auto px-2 mt-8">
-        <h2 className="text-xl md:text-[32px] font-bold mb-5">
-          Elegant Design and Functionality
+      {/* Main Content Section */}
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">
+          Why Choose French Windows for Your Home?
         </h2>
-        <p className="mb-6">
-          French windows combine classic elegance with modern functionality,
-          making them an ideal choice for any home. Their double-door design not
-          only enhances aesthetic appeal but also allows for easy access to your
-          outdoor spaces.
-        </p>
+        <div className="space-y-6 text-gray-700">
+          <p className="text-lg leading-relaxed">
+            At Chrome Double Glazing, we offer beautiful, high-quality French
+            windows that combine classic elegance with modern functionality.
+            These windows are an ideal choice for any home, offering not only a
+            touch of sophistication but also seamless access to your outdoor
+            spaces. With their double-door design, they enhance both the
+            aesthetic appeal and practical living of any room.
+          </p>
 
-        <h2 className="text-xl md:text-[32px] font-bold mb-5">
-          Key Benefits of French Windows
-        </h2>
-        <ol className="list-decimal space-y-2 mb-6">
-          <li>
-            <strong>Stylish Aesthetics:</strong> French windows add a touch of
-            sophistication to any room, enhancing both interior and exterior
-            appeal.
-          </li>
-          <li>
-            <strong>Natural Light:</strong> The large glass panels allow for
-            ample natural light to flood your space, creating a bright and
-            welcoming atmosphere.
-          </li>
-          <li>
-            <strong>Ventilation:</strong> The ability to open both sides
-            provides excellent ventilation, keeping your home fresh and airy.
-          </li>
-          <li>
-            <strong>Seamless Connection:</strong> French windows create a
-            seamless transition between indoor and outdoor living, perfect for
-            patios or gardens.
-          </li>
-          <li>
-            <strong>Energy Efficiency:</strong> Modern French windows are
-            designed with energy-efficient materials, helping to retain heat and
-            reduce energy bills.
-          </li>
-        </ol>
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Key Benefits of French Windows
+          </h3>
+          <ul className="list-decimal list-inside space-y-3">
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Elegant Aesthetics:</span> French
+              windows add a touch of sophistication to any space.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Abundant Natural Light:</span> The
+              large glass panels allow ample natural light to flood your rooms.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Improved Ventilation:</span> Open
+              both sides for excellent ventilation, keeping your home fresh.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">
+                Seamless Indoor-Outdoor Connection:
+              </span>{" "}
+              Creates a smooth transition to patios, gardens, or balconies.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Enhanced Energy Efficiency:</span>{" "}
+              Modern French windows are designed with energy-efficient
+              materials. To find more tips on making your home energy efficient,
+              please visit the
+              <a
+                href="https://energysavingtrust.org.uk/"
+                className="text-blue-600 font-medium hover:underline ml-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Energy Saving Trust Website.
+              </a>
+            </li>
+          </ul>
 
-        <h3 className="font-bold text-lg mb-2">
-          Why Choose Chrome Double Glazing for Your French Windows?
-        </h3>
-        <p className="mb-6">
-          At Chrome Double Glazing, we offer a wide range of high-quality French
-          windows tailored to your specifications. Our expert installation
-          ensures a perfect fit and finish, while our energy-efficient options
-          help you save on energy costs. Whether you prefer traditional or
-          contemporary styles, we have the perfect solution for your home.
-        </p>
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Why Choose Chrome Double Glazing?
+          </h3>
+          <p className="text-lg leading-relaxed">
+            At Chrome Double Glazing, we provide a wide range of premium French
+            windows that are tailored to your exact specifications. Our expert
+            installation team ensures a perfect fit and a high-quality finish,
+            while our energy-efficient options help you save on utility bills.
+            Whether you prefer a traditional style or a more modern look, we can
+            create the perfect French windows for your home, you can see more
+            about our
+            <a
+              href="https://www.chromedoubleglazing.com/double-glazing"
+              className="text-blue-600 font-medium hover:underline ml-1"
+            >
+              double glazing options here
+            </a>
+            .
+          </p>
 
-        <h3 className="font-bold text-lg mb-2">Get a Free Quote</h3>
-        <p className="">
-          Ready to enhance your home with stunning French windows? Contact us
-          today for a free, no-obligation quote and discover how we can
-          transform your living space.
-        </p>
+          <p className="text-lg leading-relaxed">
+            Ready to enhance your home with our beautiful French windows?
+            <a
+              className="text-blue-600 font-medium hover:underline ml-1"
+              href="https://www.chromedoubleglazing.com/contact"
+            >
+              Contact us
+            </a>{" "}
+            today for a free, no-obligation quote and let us transform your
+            living space.
+          </p>
+        </div>
       </section>
     </div>
   );

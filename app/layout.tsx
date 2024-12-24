@@ -15,11 +15,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://chromedoubleglazing.com"),
   title: {
-    template: "%s | Expert Door & Window Solutions in London",
-    default: "Chrome Double Glazing | Expert Door & Window Solutions in London",
+    template:
+      "%s - Professional Door & Window Services | Chrome Double Glazing",
+    default: "Professional Door & Window Services | Chrome Double Glazing",
   },
   description:
-    "Chrome Double Glazing offers professional installation and repair services for doors, windows, double glazing, roof lanterns, sash windows, aluminium windows, composite doors, bi-fold doors, conservatories, shopfronts, and lock repairs. Serving London, Ilford, Dagenham, we provide quality craftsmanship and exceptional service",
+    "Chrome Double Glazing provides expert door and window installation and repair services in London, Ilford, and Dagenham. We offer double glazing, roof lanterns, sash windows, and more.",
 };
 
 const localBusinessJsonLd: WithContext<LocalBusiness> = {

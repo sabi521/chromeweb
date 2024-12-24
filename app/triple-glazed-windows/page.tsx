@@ -1,12 +1,15 @@
 import React from "react";
-import myBgImage from "@/assets/images/triple_glaze_1.webp"; // Import for URL reference
+import myBgImage from "@/assets/images/triple_glaze_1.webp";
 import contentImage from "@/assets/images/triple_glazed_2.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Triple Glazed Windows",
+  title:
+    "High-Performance Triple Glazed Windows: Energy Efficiency & Comfort | Chrome Double Glazing",
+  description:
+    "Discover the exceptional benefits of triple glazed windows, including superior energy efficiency, noise reduction, and enhanced security. Get a free quote from Chrome Double Glazing today!",
   alternates: {
     canonical: "https://chromedoubleglazing.com/triple-glazed-windows",
   },
@@ -15,101 +18,127 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="mt-32 mb-10">
+      {/* Banner Section */}
       <section
-        className="top_banner max-w-[1920px] mx-auto relative h-[600px] w-full bg-black bg-cover bg-no-repeat bg-center"
+        className="relative h-[500px] md:h-[600px] bg-cover bg-center bg-no-repeat bg-black/70"
         style={{
-          backgroundImage: `url(${myBgImage.src})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${myBgImage.src})`,
         }}
       >
-        <div className="banner_content max-w-80 w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white py-3 px-2 md:p-6 md:max-w-2xl">
-          <h1 className="text-3xl md:text-[48px] md:leading-10">
-            Triple Glazed Windows
-          </h1>
-          <p className="my-3">Maximize Comfort and Efficiency</p>
-          <div className="max-w-[200px] w-full mx-auto">
-            <GetInTouch />
+        <div className="absolute inset-0 flex items-center justify-center text-center mx-auto px-4 md:px-6">
+          <div className="max-w-2xl w-full text-white">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+              Experience Superior Comfort with Triple Glazed Windows
+            </h1>
+            <p className="text-lg md:text-xl mb-6">
+              Maximize your home's energy efficiency and comfort with our
+              advanced triple glazed windows.
+            </p>
+            <div className="mx-auto w-fit">
+              <GetInTouch />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="main-content max-w-3xl mx-auto px-2 mt-8">
-        <h2 className="text-xl md:text-[32px] md:leading-10 font-bold mb-5">
-          Experience Unmatched Energy Efficiency with Triple Glazed Windows.
+      {/* Main Content Section */}
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">
+          Why Choose Triple Glazed Windows for Your Home?
         </h2>
-        <div className="space-y-4">
-          <p>
-            Triple glazed windows are designed to provide superior insulation
-            and energy efficiency, making them an ideal choice for homeowners
-            seeking to enhance comfort while reducing energy costs. With three
-            layers of glass, these windows minimize heat loss, ensuring your
-            home remains warm in winter and cool in summer.
+        <div className="space-y-6 text-gray-700">
+          <p className="text-lg leading-relaxed">
+            At Chrome Double Glazing, we are dedicated to providing top-tier
+            window solutions, and our triple glazed windows are designed to
+            provide unparalleled insulation and energy efficiency. Triple
+            glazing represents the cutting edge of window technology, making it
+            an excellent choice for homeowners who want to maximize their
+            comfort and reduce energy costs.
+          </p>
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            What Are Triple Glazed Windows?
+          </h3>
+          <p className="text-lg leading-relaxed">
+            Triple glazed windows feature three panes of glass separated by
+            insulating spaces, which are typically filled with argon or krypton
+            gas. This configuration significantly reduces heat transfer compared
+            to double glazing, resulting in a warmer home during the winter and
+            a cooler home during the summer. For more information about energy
+            saving options for your home, please visit the
+            <a
+              href="https://www.thegreenage.co.uk/"
+              className="text-blue-600 font-medium hover:underline ml-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Green Age Website.
+            </a>
           </p>
 
-          <h3 className="font-bold text-lg">What Are Triple Glazed Windows?</h3>
-          <p>
-            Triple glazed windows consist of three panes of glass separated by
-            insulating spaces filled with argon or krypton gas. This advanced
-            design significantly improves thermal performance compared to
-            traditional double glazed windows, making them a wise investment for
-            energy-conscious homeowners.
-          </p>
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Key Benefits of Installing Triple Glazed Windows
+          </h3>
+          <ul className="list-decimal list-inside space-y-3">
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">
+                Exceptional Energy Efficiency:
+              </span>{" "}
+              Reduces heat loss, maintains indoor temperatures, and lowers
+              energy bills.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Superior Noise Reduction:</span>{" "}
+              Effectively minimizes external noise, creating a quieter home.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Enhanced Security:</span> More
+              difficult to break, offering an extra layer of security.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Eco-Friendly Solution:</span>{" "}
+              Lowers energy consumption, reducing your carbon footprint and
+              environmental impact.
+            </li>
+          </ul>
 
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">
-              The Benefits of Installing Triple Glazed Windows
-            </h2>
-            <ol className="list-decimal space-y-2 pl-5">
-              <li>
-                <strong>Exceptional Energy Efficiency:</strong> With reduced
-                heat loss, triple glazing helps maintain consistent indoor
-                temperatures, lowering energy bills.
-              </li>
-              <li>
-                <strong>Noise Reduction:</strong> The additional layer of glass
-                effectively minimizes outside noise, creating a quieter living
-                environment.
-              </li>
-              <li>
-                <strong>Enhanced Security:</strong> Triple glazed windows are
-                more difficult to break, providing an extra layer of security
-                for your home.
-              </li>
-              <li>
-                <strong>Environmental Benefits:</strong> Lower energy
-                consumption contributes to a smaller carbon footprint, making
-                triple glazed windows an eco-friendly choice.
-              </li>
-            </ol>
-          </div>
-
-          <div className="max-w-[768px] h-[500px] mx-auto py-10">
+          <div className="max-w-[768px] mx-auto py-10">
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover rounded-md shadow-md"
               src={contentImage}
               width={768}
               height={500}
-              alt="Triple glazed windows"
+              alt="Triple glazed window."
             />
           </div>
 
-          <h2 className="text-2xl font-bold">
-            Why Choose Chrome Double Glazing for Your Triple Glazed Windows?
-          </h2>
-          <p>
-            At Chrome Double Glazing, we pride ourselves on delivering
-            top-quality triple glazed windows that enhance your home&apos;s
-            performance and aesthetics. Our experienced team ensures a perfect
-            installation, using the latest materials and technology to maximize
-            your windows&apos; energy efficiency and durability.
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Why Choose Chrome Double Glazing?
+          </h3>
+          <p className="text-lg leading-relaxed">
+            At Chrome Double Glazing, we are dedicated to providing top-tier
+            triple glazed windows that combine high performance with aesthetic
+            appeal. Our experienced team ensures a flawless installation, using
+            the latest materials and techniques to maximize the energy
+            efficiency and longevity of your windows. You can see more about
+            <a
+              href="https://www.chromedoubleglazing.com/casement-windows"
+              className="text-blue-600 font-medium hover:underline ml-1"
+            >
+              our casement windows here.
+            </a>
           </p>
 
-          <h4 className="text-xl font-bold">
-            Get a Free Quote for Your Triple Glazed Windows
-          </h4>
-          <p>
-            Upgrade your home with high-performance triple glazed windows.
-            Contact Chrome Double Glazing today for a free, no-obligation quote
-            and discover the benefits of superior insulation and comfort.
+          <p className="text-lg leading-relaxed">
+            Ready to upgrade your home with our high-performance triple glazed
+            windows?
+            <a
+              className="text-blue-600 font-medium hover:underline ml-1"
+              href="https://www.chromedoubleglazing.com/contact"
+            >
+              Contact us
+            </a>{" "}
+            today for a free, no-obligation quote and discover the benefits of
+            superior insulation and comfort.
           </p>
         </div>
       </section>

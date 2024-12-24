@@ -1,12 +1,15 @@
 import React from "react";
-import myBgImage from "@/assets/images/casement_windows.webp"; // Import for URL reference
+import myBgImage from "@/assets/images/casement_windows.webp";
 import contentImage from "@/assets/images/window_handle.webp";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Casement Windows",
+  title:
+    "Premium Casement Windows: Style, Security & Efficiency | Chrome Double Glazing",
+  description:
+    "Discover the benefits of casement windows from Chrome Double Glazing. Enhance your home with style, security, and excellent ventilation. Get a free quote today!",
   alternates: {
     canonical: "https://chromedoubleglazing.com/casement-windows",
   },
@@ -15,117 +18,160 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="mt-32 mb-10">
+      {/* Banner Section */}
       <section
-        className="top_banner max-w-[1920px] mx-auto relative h-[600px] w-full bg-black bg-cover bg-no-repeat bg-center"
+        className="relative h-[500px] md:h-[600px] bg-cover bg-center bg-no-repeat bg-black/70"
         style={{
-          backgroundImage: `url(${myBgImage.src})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${myBgImage.src})`,
         }}
       >
-        <div className="banner_content max-w-80 w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center mx-auto bg-black/60 text-white py-3 px-2 md:p-6 md:max-w-2xl">
-          <h1 className="text-3xl md:text-[48px] md:leading-10">
-            Casement Windows
-          </h1>
-          <p className="my-3">
-            Easy to open and close, offering excellent ventilation
-          </p>
-          <div className="max-w-[200px] w-full mx-auto">
-            <GetInTouch />
+        <div className="absolute inset-0 flex items-center justify-center text-center mx-auto px-4 md:px-6">
+          <div className="max-w-2xl w-full text-white">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+              Elegant Casement Windows: Style and Functionality
+            </h1>
+            <p className="text-lg md:text-xl mb-6">
+              Upgrade your home with our versatile casement windows, offering
+              superior ventilation, security, and energy efficiency.
+            </p>
+            <div className="mx-auto w-fit">
+              <GetInTouch />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="main-content max-w-3xl mx-auto px-2 mt-8">
-        <h2 className="text-xl md:text-[32px] font-bold mb-5">
-          Transform Your Home with Casement Windows
+      {/* Main Content Section */}
+      <section className="max-w-4xl mx-auto px-4 md:px-6 py-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">
+          Why Choose Casement Windows for Your Home?
         </h2>
-        <div className="space-y-4">
-          <p>
-            Transform your home with our casement windows, designed to enhance
-            your living space with both style and functionality. These windows
-            not only look stunning but are also rigorously tested to surpass
-            standards for security, heat retention, and weather performance.
-            With seven frame color options, a variety of handles, and numerous
-            customization choices, our casement windows provide a flexible
-            solution to truly personalize your home.
-          </p>
-          <p>
-            Casement windows are our most popular and versatile style, offering
-            hundreds of configurations and options to create the perfect fit for
-            your house. Everest casement windows come in classic uPVC, wood for
-            a traditional look, and aluminum for modern frames. You can select
-            from a range of options to tailor your home to your preferences.
+        <div className="space-y-6 text-gray-700">
+          <p className="text-lg leading-relaxed">
+            At Chrome Double Glazing, we offer premium casement windows that are
+            engineered to elevate the comfort and aesthetic appeal of your
+            living space. Our casement windows are meticulously tested to exceed
+            industry benchmarks for security, thermal performance, and weather
+            resistance, ensuring that you receive a durable, high-quality
+            product.
           </p>
 
-          <p>
-            <strong>
-              wide variety of colors and window fittings. Casement windows can
-              be fitted with double glazing or triple glazing for exceptional
-              energy efficiency.
-            </strong>
+          <p className="text-lg leading-relaxed">
+            Casement windows are a popular and versatile style, known for their
+            clean lines, ease of operation, and outstanding performance.
+            Available in a wide array of configurations, colors, and finishes,
+            our casement windows are designed to complement any architectural
+            style, offering a customized solution that perfectly matches your
+            home's unique character. We offer both uPVC and Aluminium options,
+            as well as a wood finish for traditional properties. You can read
+            more about
+            <a
+              href="https://www.chromedoubleglazing.com/double-glazing"
+              className="text-blue-600 font-medium hover:underline ml-1"
+            >
+              our double glazing options here.
+            </a>
           </p>
-          <ul className="space-y-2">
-            <li>
-              <strong>Versatile Design:</strong>A range of colors, styles, and
-              options to suit your property.
-            </li>{" "}
-            <li>
-              <strong>Modern Aesthetics:</strong> Give your home a clean, fresh
-              look with uPVC casement windows.
-            </li>{" "}
-            <li>
-              <strong>High Standards:</strong>Rgorously tested to exceed
-              industry standards.
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Key Features and Benefits
+          </h3>
+          <ul className="list-disc list-inside space-y-3">
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold"> Customization Options:</span>{" "}
+              Choose from a wide range of colors, frame options, and handles to
+              perfectly match your property.
             </li>
-            <li>
-              <strong>Energy Efficiency:</strong> &apos;A&apos; rated for
-              outstanding heat retention and minimal heat
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Modern Aesthetics:</span> Our
+              casement windows add a touch of contemporary style to any home.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Industry-Leading Standards:</span>{" "}
+              Rigorously tested to exceed industry standards in performance,
+              durability, and security.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">
+                Exceptional Energy Efficiency:
+              </span>{" "}
+              Achieve superior thermal performance with A-rated glazing options
+              to significantly reduce your energy consumption.
             </li>
           </ul>
 
-          <div className="max-w-[768px] h-[500px] mx-auto py-10">
+          <div className="max-w-[768px] mx-auto py-10">
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover rounded-md shadow-md"
               src={contentImage}
               width={768}
               height={500}
-              alt="window image"
+              alt="Close-up of a casement window handle."
             />
           </div>
 
-          <ol className="list-decimal space-y-2">
-            <li>
-              <strong>Maximum Ventilation:</strong> Casement windows open fully,
-              allowing for excellent airflow and ventilation throughout your
-              home.
-            </li>{" "}
-            <li>
-              <strong>Energy Efficiency:</strong> They provide a tight seal when
-              closed, which helps in reducing energy loss and maintaining indoor
-              temperatures.
-            </li>{" "}
-            <li>
-              <strong>Enhanced Security:</strong> These windows often come with
-              robust locking mechanisms, making them more secure against
-              break-in.
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Why You'll Love Casement Windows
+          </h3>
+
+          <ol className="list-decimal list-inside space-y-3">
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Maximum Ventilation:</span>{" "}
+              Casement windows open fully to provide excellent airflow, creating
+              a refreshing living environment.
             </li>
-            <li>
-              <strong>Ease of Cleaning:</strong> The design allows for easy
-              cleaning of both the interior and exterior surfaces.
-            </li>{" "}
-            <li>
-              <strong>Versatility in Design:</strong> Available in various
-              materials, styles, and colors, casement windows can complement
-              almost any type of property.
-            </li>{" "}
-            <li>
-              <strong>Natural Light:</strong> They allow plenty of natural light
-              to enter, brightening up your living spaces.
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Energy Efficiency:</span> Designed
+              to create a tight seal when closed, effectively minimizing air
+              leaks, and help maintain consistent indoor temperatures, reducing
+              your energy bills. For more tips on how to make your home energy
+              efficient, please read this{" "}
+              <a
+                href="https://energysavingtrust.org.uk/"
+                className="text-blue-600 font-medium hover:underline ml-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Energy Saving Trust Guide.
+              </a>
             </li>
-            <li>
-              <strong>Unobstructed Views:</strong> When open, casement windows
-              provide a clear, unobstructed view of the outside.
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Enhanced Security:</span> Equipped
+              with multi-point locking systems for extra protection and peace of
+              mind.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Easy Maintenance:</span> Designed
+              for ease of cleaning of both interior and exterior surfaces,
+              saving you time and effort.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Versatility in Design:</span>{" "}
+              Casement windows can complement any architectural style and
+              property type, providing customizable solutions.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Enhanced Natural Light:</span>{" "}
+              Maximise natural light into your rooms, creating an open and
+              inviting feel.
+            </li>
+            <li className="text-lg leading-relaxed">
+              <span className="font-semibold">Unobstructed Views:</span> When
+              open, casement windows provide a clear, expansive view of the
+              outside world.
             </li>
           </ol>
+
+          <p className="text-lg leading-relaxed">
+            Ready to enhance your home with our high-quality casement windows?
+            <a
+              className="text-blue-600 font-medium hover:underline ml-1"
+              href="https://www.chromedoubleglazing.com/contact"
+            >
+              Contact us
+            </a>{" "}
+            today to schedule a consultation and receive a free, no-obligation
+            quote.
+          </p>
         </div>
       </section>
     </div>

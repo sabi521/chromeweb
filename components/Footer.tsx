@@ -11,6 +11,15 @@ const Footer = () => {
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
+                  href="/double-glazing"
+                  className="text-white transition hover:opacity-75"
+                >
+                  Double Glazing
+                </a>
+              </li>
+
+              <li>
+                <a
                   href="/sash-windows"
                   className="text-white transition hover:opacity-75"
                 >
@@ -48,6 +57,15 @@ const Footer = () => {
                   className="text-white transition hover:opacity-75"
                 >
                   About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/blogs"
+                  className="text-white transition hover:opacity-75"
+                >
+                  Blogs
                 </a>
               </li>
             </ul>
